@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: orange;
+  background: url(./img/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: co;
+  font-family: 'Libre Baskerville', serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(195, 168, 170);
+  padding: 10px 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  margin: 10px;
+  max-height: 600px;
+  max-width: 320px;
+}
+
+header {
+  font-family: 'Inspiration', cursive;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+hr {
+  display: block;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.container,
+.login-container,
+.about-container,
+.contact-container {
+  width: 100%;
+  background-color: rgba(245, 245, 245, 0.938);
+  padding: 30px 30px 20px 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 20px 65px rgba(87, 11, 16, 0.5);
+  position: relative;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.login-container,
+.about-container,
+.contact-container {
+  padding: 30px;
+}
+
+.container p,
+.login-container p,
+.about-container p,
+.contact-container p {
+  color: black;
+  line-height: 1.5;
+  font-size: 16px;
+  display: inline;
+  transition: opacity 1.3s ease-in;
+}
+
+.container h3,
+.login-container h2,
+.about-container h2,
+.contact-container h2 {
+  color: black;
+  margin: 30px 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.buttons,
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  flex-direction: column;
+}
+
+.icons a {
+  color: rgba(0, 0, 0, 0.658);
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.icons a:nth-child(2) {
+  margin: 0 25px;
+}
+
+.icons a:nth-child(3) {
+  font-size: 20px;
+}
+
+.icons a i {
+  transition: all 0.3s ease-in-out;
+}
+
+.icons a:hover i {
+  transform: scale(1.2);
+  color: #1a8dc2;
+}
+
+.container button,
+.login-btn,
+.contact-btn {
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: rgb(66 148 129 / 32%);
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.container button:hover,
+.login-btn:hover,
+.contact-btn:hover {
+  background-color: orange;
+}
+
+.container button:active,
+.login-btn:active,
+.contact-btn:active {
+  background-color:rgb(66, 148, 129);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.tags button {
+  padding: 5px 10px;
+  margin: 5px 4px;
+  background-color: rgba(0, 0, 0, 0.438);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tags button:hover {
+  background-color: black;
+}
+
+.tags button:active {
+  background-color: rgb(36, 36, 36);
+}
+
+.login-container form,
+.contact-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.login-container label,
+.contact-container label {
+  text-align: left;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.login-container input,
+.contact-container input,
+.contact-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.navigation a {
+  color: black;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navigation a:hover {
+  color: #1a8dc2;
+}
+
+@media screen and (min-width: 480px) {
+  .wrapper {
+    max-width: 700px;
+  }
+
+  .buttons,
+  .navigation {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .container button,
+  .login-btn,
+  .contact-btn {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    max-width: 1000px;
+  }
+
+  header {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .container p,
+  .login-container p,
+  .about-container p,
+  .contact-container p {
+    font-size: 24px;
+  }
+
+  .container h3,
+  .login-container h2,
+  .about-container h2,
+  .contact-container h2 {
+    font-size: 20px;
+  }
+
+  .container button,
+  .login-btn,
+  .contact-btn {
+    font-size: 20px;
+  }
+
+  .tags button {
+    font-size: 16px;
+  }
+}

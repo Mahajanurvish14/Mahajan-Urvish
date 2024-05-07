@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Random Quote Generator - Upload </title>
+  <style>
+    .quote-form {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .quote-form h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #333;
+    }
+    .quote-form form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+    }
+    .quote-form label {
+      display: block;
+      margin-bottom: 5px;
+      color: #666;
+    }
+    .quote-form input,
+    .quote-form select,
+    .quote-form textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .quote-form button {
+      grid-column: 1 / -1;
+      font-weight: bold;
+      background-color: rgb(66 148 129 / 32%);
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .quote-form button:hover {
+      background-color: orange; 
+    }
+    header {
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="wrapper">
+    <header>
+      <h1>Random Quote Generator</h1>
+    </header>
+    <div class="quote-form">
+      <h2>Upload Quote</h2>
+      <form id="upload-form">
+        <div>
+          <label for="firstName">First Name</label>
+          <input type="text" id="firstName" name="firstName" placeholder="Type your First Name" required>
+        </div>
+        <div>
+          <label for="lastName">Last Name</label>
+          <input type="text" id="lastName" name="lastName" placeholder="Type your Last Name" required>
+        </div>
+        <div>
+          <label for="mobile">Mobile Number</label>
+          <input type="tel" id="mobile" name="mobile" placeholder="Mobile Number" required>
+        </div>
+        <div>
+          <label for="Category">Category</label>
+          <select id="category" name="Category" required>
+            <option value="">Select a category</option>
+            <option value="famous">Famous Quotes</option>
+            <option value="technology">Technology</option>
+            <option value="business">Business</option>
+            <option value="wisdom">Wisdom</option>
+            <option value="life">Life</option>
+            <option value="love">Love</option>
+            <option value="friendship">Friendship</option>
+            <option value="success">Success</option>
+            <option value="inspirational">Inspirational</option>
+            <option value="sports">Sports</option>
+            
+          </select>
+        </div>
+        <div>
+          <label for="Author">Author</label>
+          <input type="text" id="Author" name="Author" placeholder="Author's Name" required>
+        </div>
+        <div>
+          <label for="country">Country</label>
+          <select id="country" name="country" required>
+            <option value="">Select Country</option>
+            <option value="India">India</option>
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+            
+          </select>
+        </div>
+        <div>
+          <label for="fileUpload">Upload Your File</label>
+          <input type="file" id="fileUpload" name="fileUpload">
+        </div>
+        <div>
+          <label for="Quote">Quote</label>
+          <textarea id="Quote" name="Quote" rows="3"></textarea>
+        </div>
+        <button type="submit">Upload Quote</button>
+      </form>
+    </div>
+    <div class="navigation">
+      <a href="/">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+  </div>
+  <script src="upload.js"></script>
+</body>
+</html>

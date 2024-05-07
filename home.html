@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  <link rel="stylesheet" href="style.css">
+  <title>Random Quote Generator - Home</title>
+  <style>
+    .icons li {
+      display: inline-block;
+      margin-right: 10px; 
+    }
+
+    .icons li a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <div class="rectangle-box"></div> 
+  <div class="wrapper">
+    <header>
+      <h1>Random Quote Generator</h1>
+    </header>
+    <div class="container">
+      <div class="quote-container">
+        <hr />
+        <p id="quote" class="quote"></p>
+        <hr />
+        <h3 id="author" class="author"></h3>
+      </div>
+      <div class="buttons">
+        <ul class="icons">
+          <li><a href="#"><i id="speak" class="fa-solid fa-volume-high"></i></a></li>
+          <li><a href="#"><i id="copy " class="fa-regular fa-copy"></i></a></li>
+          <li><a href="#"><i id="twitter " class="fab fa-twitter"></i></a></li>
+        </ul>
+        <button id="random" class="randomBtn">Get Random Quote</button>
+      </div>
+    </div>
+    <div class="tags">
+      <button id="famous-quotes">Famous Quotes</button>
+      <button id="technology">Technology</button>
+      <button id="business">Business</button>
+      <button id="wisdom">Wisdom</button>
+      <button id="life">Life</button>
+      <button id="love">Love</button>
+      <button id="friendship">Friendship</button>
+      <button id="success">Succes</button>
+      <button id="inspirational">Inspirational</button>
+      <button id="sports">Sports</button>
+    </div>
+    <div class="navigation">
+      <a href="/">Logout</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="upload.html">Upload</a>
+     
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
